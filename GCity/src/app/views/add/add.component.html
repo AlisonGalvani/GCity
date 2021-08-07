@@ -1,0 +1,34 @@
+<mat-card>
+    <mat-card-title>Cidade</mat-card-title>
+    <mat-card-subtitle>Adicione uma cidade</mat-card-subtitle>
+
+    <mat-form-field appearance="outline" color="accent">
+        <mat-label>Cidade:</mat-label>
+        <input [(ngModel)]="newCity" matInput placeholder="Ex. Maringá">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="addCity()">Adicionar</button>
+    <span class="statusMessage" [ngClass]="cityStatus ? 'success' : 'error'">{{cityStatusMessage}}</span>
+</mat-card>
+
+<mat-card>
+    <mat-card-title>CEP</mat-card-title>
+    <mat-card-subtitle>Escolha uma cidade e adicione um CEP</mat-card-subtitle>
+
+    <mat-form-field appearance="outline" color="accent">
+        <mat-label>Escolha a cidade</mat-label>
+        <mat-select [(ngModel)]="selectedCity">
+            <mat-option *ngFor="let city of cities" [value]="city._id">
+                {{city.name}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" color="accent">
+        <mat-label>CEP:</mat-label>
+        <input [(ngModel)]="newCep" matInput>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="addCep()">Adicionar</button>
+    <span class="statusMessage" [ngClass]="cepStatus ? 'success' : 'error'">{{cepStatusMessage}}</span>
+</mat-card>

@@ -1,0 +1,18 @@
+mat-card {
+    margin-bottom: 15px;
+}
+mat-form-field {
+    margin-left: 15px;
+}
+mat-card button {
+    margin-left: 15px;
+}
+.statusMessage {
+    margin-left: 15px;
+}
+.success {
+    color: #69F0AE !important;
+}
+.error {
+    color: #F44336 !important;
+}

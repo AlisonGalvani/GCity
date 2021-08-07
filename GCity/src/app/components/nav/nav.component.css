@@ -1,0 +1,13 @@
+.sidenav {
+    width: 150px;
+}
+.sidenav i {
+    padding-right: 10px;
+}
+mat-nav-list a {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.582);
+}
+mat-nav-list i {
+    font-size: 24px;
+    margin-right: 10px;
+}

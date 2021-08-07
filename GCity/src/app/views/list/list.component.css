@@ -1,0 +1,12 @@
+.listAdd {
+    padding-left: 31px;
+}
+.city span{
+    font-size: 17px;
+}
+.cep {
+    margin: 5px 0;
+}
+.cep span{
+    font-size: 14px;
+}
